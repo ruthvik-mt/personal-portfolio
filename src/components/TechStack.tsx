@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import IntersectionAnimation from "./IntersectionAnimation";
 import reactIcon from "@/assets/react-icon.png";
 import typescriptIcon from "@/assets/typescript-icon.png";
 import nodejsIcon from "@/assets/nodejs-icon.png";
@@ -30,21 +31,26 @@ const TechStack = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {technologies.map((tech, index) => (
-            <Card
+            <IntersectionAnimation
               key={tech.name}
-              className="glass-card hover-glow p-6 text-center transition-bounce hover:scale-105 cursor-pointer"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              animationClass="animate-skill-pop"
+              delay={index * 100}
             >
-              <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <img 
-                  src={tech.icon} 
-                  alt={tech.name}
-                  className="w-12 h-12 object-contain filter brightness-110"
-                />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">{tech.name}</h3>
-              <p className="text-sm text-muted-foreground">{tech.description}</p>
-            </Card>
+              <Card
+                key={tech.name}
+                className="glass-card hover-glow p-6 text-center transition-bounce hover:scale-105 cursor-pointer"
+              >
+                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <img 
+                    src={tech.icon} 
+                    alt={tech.name}
+                    className="w-12 h-12 object-contain filter brightness-110"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">{tech.name}</h3>
+                <p className="text-sm text-muted-foreground">{tech.description}</p>
+              </Card>
+            </IntersectionAnimation>
           ))}
         </div>
       </div>

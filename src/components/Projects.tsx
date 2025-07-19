@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import IntersectionAnimation from "./IntersectionAnimation";
 import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
@@ -53,26 +54,29 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card
+            <IntersectionAnimation
               key={project.title}
-              className={`glass-card hover-glow transition-bounce hover:scale-[1.02] cursor-pointer ${
-                project.featured ? 'md:col-span-2' : ''
-              }`}
-              style={{ animationDelay: `${index * 0.2}s` }}
+              animationClass="animate-fade-in"
+              delay={index * 200}
             >
-              <CardHeader>
-                <div className="flex justify-between items-start mb-2">
-                  <CardTitle className="text-2xl font-bold">{project.title}</CardTitle>
-                  {project.featured && (
-                    <Badge variant="secondary" className="gradient-accent text-accent-foreground">
-                      Featured
-                    </Badge>
-                  )}
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  {project.description}
-                </p>
-              </CardHeader>
+              <Card
+                className={`glass-card hover-glow animate-project-hover cursor-pointer ${
+                  project.featured ? 'md:col-span-2' : ''
+                }`}
+              >
+                <CardHeader>
+                  <div className="flex justify-between items-start mb-2">
+                    <CardTitle className="text-2xl font-bold">{project.title}</CardTitle>
+                    {project.featured && (
+                      <Badge variant="secondary" className="gradient-accent text-accent-foreground">
+                        Featured
+                      </Badge>
+                    )}
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
+                </CardHeader>
               
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -108,6 +112,7 @@ const Projects = () => {
                 </div>
               </CardContent>
             </Card>
+            </IntersectionAnimation>
           ))}
         </div>
       </div>
