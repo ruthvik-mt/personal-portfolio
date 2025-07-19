@@ -61,7 +61,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold">
-            <span className="text-gradient">Dev</span>
+            <span className="text-gradient">ruthvik.dev</span>
           </div>
 
           {/* Desktop Menu */}
