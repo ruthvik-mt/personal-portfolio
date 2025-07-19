@@ -36,20 +36,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com",
+      value: "ruthvikmt001@gmail.com",
+      href: "mailto:ruthvikmt001@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 9740658763",
+      href: "tel:+91 9740658763",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "#",
+      value: "Puttur, Karnataka",
+      href: "https://www.google.com/maps/place/Puttur,+Karnataka",
     },
   ];
 
@@ -57,17 +57,17 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/johndoe",
+      href: "https://github.com/ruthvik-mt",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://www.linkedin.com/in/ruthvikmt/",
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/johndoe",
+      icon: Mail,
+      label: "Mail",
+      href: "mailto:ruthvikmt001@gmail.com",
     },
   ];
 

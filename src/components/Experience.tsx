@@ -4,42 +4,42 @@ import { Calendar, MapPin } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
+    // {
+    //   title: "Senior Frontend Developer",
+    //   company: "TechCorp Inc.",
+    //   location: "San Francisco, CA",
+    //   duration: "2022 - Present",
+    //   type: "Full-time",
+    //   description: "Led development of React-based web applications serving 100K+ users. Implemented modern UI/UX patterns and optimized performance by 40%.",
+    //   technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+    // },
     {
-      title: "Senior Frontend Developer",
-      company: "TechCorp Inc.",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      type: "Full-time",
-      description: "Led development of React-based web applications serving 100K+ users. Implemented modern UI/UX patterns and optimized performance by 40%.",
-      technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
-    },
-    {
-      title: "Full Stack Developer Intern",
-      company: "StartupXYZ",
-      location: "Remote",
-      duration: "Summer 2021",
+      title: "Software Testing Intern",
+      company: <a href="https://www.linkedin.com/company/torsecure-cyber-llp/?originalSubdomain=inTorSecure" target="-blank" rel="noopener noreferrer">Torsecure</a>,
+      location: "Onsite",
+      duration: "2025 - Present",
       type: "Internship",
-      description: "Developed and maintained web applications using MERN stack. Collaborated with design team to implement responsive user interfaces.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      description: "Performed API testing with Postman and security testing with Burp Suite to identify vulnerabilities and enhance application security.",
+      // technologies: ["React", "Node.js", "MongoDB", "Express"],
     },
     {
       title: "Open Source Contributor",
-      company: "React Ecosystem",
+      company: <a href="https://github.com/scribe-org" target="_blank" rel="noopener noreferrer">Scribe Org</a>,
       location: "Remote",
-      duration: "2020 - Present",
+      duration: "2025 - Present",
       type: "Open Source",
-      description: "Active contributor to popular React libraries. Maintained documentation, fixed bugs, and implemented new features for community projects.",
-      technologies: ["React", "JavaScript", "Testing", "Documentation"],
+      description: "Improved localization, resolved styling-related compiler issues, and refactored UI components for better performance."
+      // technologies: ["React", "JavaScript", "Testing", "Documentation"],
     },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency",
-      location: "New York, NY",
-      duration: "2020 - 2022",
-      type: "Full-time",
-      description: "Built responsive websites and web applications for various clients. Focused on performance optimization and cross-browser compatibility.",
-      technologies: ["HTML", "CSS", "JavaScript", "Vue.js"],
-    },
+    // {
+    //   title: "Frontend Developer",
+    //   company: "Digital Agency",
+    //   location: "New York, NY",
+    //   duration: "2020 - 2022",
+    //   type: "Full-time",
+    //   description: "Built responsive websites and web applications for various clients. Focused on performance optimization and cross-browser compatibility.",
+    //   technologies: ["HTML", "CSS", "JavaScript", "Vue.js"],
+    // },
   ];
 
   const getTypeColor = (type: string) => {
@@ -110,13 +110,13 @@ const Experience = () => {
                       {exp.description}
                     </p>
                     
-                    <div className="flex flex-wrap gap-2">
+                    {/* <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech) => (
                         <Badge key={tech} variant="outline" className="border-primary/30">
                           {tech}
                         </Badge>
                       ))}
-                    </div>
+                    </div> */}
                   </CardContent>
                 </Card>
               </div>

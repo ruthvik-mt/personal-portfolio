@@ -1,55 +1,66 @@
-import { Card } from "@/components/ui/card";
 import IntersectionAnimation from "./IntersectionAnimation";
 import reactIcon from "@/assets/react-icon.png";
 import typescriptIcon from "@/assets/typescript-icon.png";
 import nodejsIcon from "@/assets/nodejs-icon.png";
 import pythonIcon from "@/assets/python-icon.png";
+import javaIcon from "@/assets/java-icon.png";
+import javascriptIcon from "@/assets/javascript-icon.png";
+import htmlIcon from "@/assets/html-icon.png";
+import cssIcon from "@/assets/css-icon.png";
+import colabIcon from "@/assets/colab-icon.png";
+import dockerIcon from "@/assets/docker-icon.png";
+import figmaIcon from "@/assets/figma-icon.png";
+import gitIcon from "@/assets/git-icon.png";
+import githubIcon from "@/assets/github-icon.png";
+import mongodbIcon from "@/assets/mongodb-icon.png";
+import nodeIcon from "@/assets/node-icon.png";
+import postmanIcon from "@/assets/postman-icon.png";
+import springIcon from "@/assets/spring-icon.png";
 
 const TechStack = () => {
   const technologies = [
-    { name: "React", icon: reactIcon, description: "Frontend Framework" },
-    { name: "TypeScript", icon: typescriptIcon, description: "Type-Safe JavaScript" },
-    { name: "Node.js", icon: nodejsIcon, description: "Backend Runtime" },
-    { name: "Python", icon: pythonIcon, description: "Data Science & Backend" },
-    { name: "Next.js", icon: reactIcon, description: "Full-Stack Framework" },
-    { name: "Tailwind CSS", icon: typescriptIcon, description: "Utility-First CSS" },
-    { name: "MongoDB", icon: nodejsIcon, description: "NoSQL Database" },
-    { name: "PostgreSQL", icon: pythonIcon, description: "Relational Database" },
+    { icon: javaIcon },
+    { icon: pythonIcon },
+    { icon: javascriptIcon },
+    { icon: typescriptIcon },
+    { icon: htmlIcon },
+    { icon: cssIcon },
+    { icon: reactIcon },
+    { icon: nodeIcon },
+    { icon: mongodbIcon },
+    { icon: dockerIcon },
+    { icon: springIcon },
+    { icon: postmanIcon },
+    { icon: figmaIcon },
+    { icon: colabIcon },
+    { icon: gitIcon },
+    { icon: githubIcon },
   ];
 
   return (
     <section id="tech-stack" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             <span className="text-gradient">Tech Stack</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Technologies and tools I use to build amazing digital experiences
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Technologies and tools I use to build projects
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {technologies.map((tech, index) => (
             <IntersectionAnimation
-              key={tech.name}
+              key={index}
               animationClass="animate-skill-pop"
               delay={index * 100}
             >
-              <Card
-                key={tech.name}
-                className="glass-card hover-glow p-6 text-center transition-bounce hover:scale-105 cursor-pointer"
-              >
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <img 
-                    src={tech.icon} 
-                    alt={tech.name}
-                    className="w-12 h-12 object-contain filter brightness-110"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">{tech.name}</h3>
-                <p className="text-sm text-muted-foreground">{tech.description}</p>
-              </Card>
+              <img
+                src={tech.icon}
+                alt={`tech-icon-${index}`}
+                className="w-20 h-20 object-contain mx-auto transition-transform hover:scale-110"
+              />
             </IntersectionAnimation>
           ))}
         </div>

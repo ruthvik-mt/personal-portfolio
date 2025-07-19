@@ -12,7 +12,7 @@ const Navigation = () => {
     { href: "#tech-stack", label: "Skills" },
     { href: "#projects", label: "Projects" },
     { href: "#experience", label: "Experience" },
-    { href: "#achievements", label: "Achievements" },
+    // { href: "#achievements", label: "Achievements" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -61,7 +61,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold">
-            <span className="text-gradient">JD</span>
+            <span className="text-gradient">Dev</span>
           </div>
 
           {/* Desktop Menu */}
