@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-gradient">
-              <TypingEffect text="Ruthvik M T" speed={150} delay={1000} />
+              <TypingEffect text="Hi! I'm Ruthvik M T" speed={150} delay={1000} />
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
