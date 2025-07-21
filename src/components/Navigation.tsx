@@ -58,12 +58,13 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="text-2xl font-bold">
-            <span className="text-gradient">ruthvik.dev</span>
-          </div>
-
+  <div className="flex items-center justify-between">
+    {/* Logo + Text */}
+    <div className="flex items-center space-x-2 text-2xl font-bold">
+      <img src="/favicon.ico" alt="Logo" className="w-8 h-8" />
+      <span className="text-gradient">ruthvik.dev</span>
+    </div>
+    
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
