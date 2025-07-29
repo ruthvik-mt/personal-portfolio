@@ -137,9 +137,9 @@ const Projects = () => {
     {
       title: "Trackifi",
       description:
-        "A full-stack personal finance tracker that enables users to manage budgets, track categorized expenses, and view financial insights. Built with Spring Boot, JWT authentication, and PostgreSQL for secure and efficient backend operations.",
+        "A full-stack personal finance tracker that enables users to manage budgets, track categorized expenses, and view financial insights. Built with Spring Boot, React and PostgreSQL for secure and efficient backend operations.",
       technologies: ["Java", "Spring-Boot", "PostgreSQL", "Typescript"],
-      liveLink: "#",
+      liveLink: "https://trackifii.vercel.app/",
       githubLink: "https://github.com/ruthvik-mt/Trackifi",
       image: trackifiImg, // 🔁 Add project image paths
       featured: false,
@@ -168,7 +168,7 @@ const Projects = () => {
     {
       title: "MentorLink",
       description:
-        "A full-stack platform streamlines mentor-mentee interactions with features like role-based authentication, appointment scheduling, feedback management, and achievement tracking. Built with a clean frontend and a scalable backend API.",
+        "A full-stack platform streamlines mentor-mentee interactions with features like role-based authentication, appointment scheduling, feedback management and achievement tracking. Built with a clean frontend and a scalable backend API.",
       technologies: ["React", "MongoDB", "Javascript", "Vite"],
       liveLink: "https://mentorlink-three.vercel.app/",
       githubLink: "https://github.com/ruthvik-mt/MentorLink",
