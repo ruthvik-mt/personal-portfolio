@@ -19,7 +19,7 @@ const Experience = () => {
       location: "Hybrid",
       duration: "2025 - Present",
       type: "Internship",
-      description: "Performed API testing with Postman and security testing with Burp Suite to identify vulnerabilities and enhance application security.",
+      // description: "Performed API testing with Postman and security testing with Burp Suite to identify vulnerabilities and enhance application security.",
       // technologies: ["React", "Node.js", "MongoDB", "Express"],
     },
     {
@@ -28,7 +28,7 @@ const Experience = () => {
       location: "Remote",
       duration: "2025 - Present",
       type: "Open Source",
-      description: "Improved localization, resolved styling-related compiler issues, and refactored UI components for better performance."
+      // description: "Improved localization, resolved styling-related compiler issues, and refactored UI components for better performance."
       // technologies: ["React", "JavaScript", "Testing", "Documentation"],
     },
     // {
@@ -106,10 +106,10 @@ const Experience = () => {
                   </CardHeader>
                   
                   <CardContent>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
+                    {/* <p className="text-muted-foreground mb-4 leading-relaxed">
                       {exp.description}
                     </p>
-                    
+                     */}
                     {/* <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech) => (
                         <Badge key={tech} variant="outline" className="border-primary/30">
