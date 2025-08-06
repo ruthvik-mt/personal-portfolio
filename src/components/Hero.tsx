@@ -20,11 +20,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 flex justify-center items-center">
             <span className="text-gradient">
               <TypingEffect text="Hi! I'm Ruthvik M T" speed={150} delay={1000} />
             </span>
-          </h1>
+            </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Computer Science Undergrad | Passionate about Full-Stack Development , AI and Open Source
           </p>
