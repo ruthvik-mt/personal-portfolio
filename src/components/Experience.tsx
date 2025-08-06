@@ -16,7 +16,7 @@ const Experience = () => {
     {
       title: "Technical Intern",
       company: <a href="https://www.linkedin.com/company/torsecure-cyber-llp/?originalSubdomain=inTorSecure" target="-blank" rel="noopener noreferrer">Torsecure</a>,
-      location: "Onsite",
+      location: "Hybrid",
       duration: "2025 - Present",
       type: "Internship",
       description: "Performed API testing with Postman and security testing with Burp Suite to identify vulnerabilities and enhance application security.",
