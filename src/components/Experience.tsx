@@ -14,7 +14,7 @@ const Experience = () => {
     //   technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
     // },
     {
-      title: "Software Testing Intern",
+      title: "Technical Intern",
       company: <a href="https://www.linkedin.com/company/torsecure-cyber-llp/?originalSubdomain=inTorSecure" target="-blank" rel="noopener noreferrer">Torsecure</a>,
       location: "Onsite",
       duration: "2025 - Present",
